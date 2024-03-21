@@ -8,18 +8,13 @@
     <title>@yield('title')</title>
 
     @vite('resources/js/app.js')
-
-    @yield('style')
 </head>
 
 <body>
-    <header>
-        @include('components.header')
-    </header>
 
-    <main>
-        @yield('main_content')
-    </main>
+    @include('components.header')
+    @yield('main_content')
+
 </body>
 
 </html>

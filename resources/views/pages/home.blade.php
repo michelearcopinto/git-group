@@ -2,33 +2,20 @@
 
 @section('title', 'Benvenuto | Home')
 
-@section('style')
-    <style>
-        main {
-            padding-inline: 50px;
-
-            h1 {
-                color: blue;
-            }
-
-            li {
-                list-style-type: disc;
-                margin-left: 1rem;
-            }
-        }
-    </style>
-@endsection
-
 @section('main_content')
-    <h1>{{ $greeting }}</h1>
 
-    <ul>
-        @foreach ($data as $element)
-            {{-- {{ dd($loop) }} --}}
+<main>
+    <div class="container">
+        <h1>Hello Git</h1>
 
-            <li>
-                {{ $element['name'] }}
-            </li>
-        @endforeach
-    </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quam at alias, ab cum soluta, assumenda obcaecati aliquam possimus ipsum quasi tempore consectetur ad? Aliquid, recusandae. Soluta harum velit provident.</p>
+
+        
+    </div>
+
+
+
+</main>
+
+
 @endsection

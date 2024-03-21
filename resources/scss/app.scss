@@ -51,12 +51,18 @@ table {
 
 h1 {
     color: $font-color;
-    @include main-font-center;
 }
 
 header {
-    h1 {
-        color: $font-color-third;
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 10em;
+        align-items: center;
+        flex-direction: row;
     }
 
     nav {
@@ -65,6 +71,66 @@ header {
             align-items: center;
             padding: 20px;
             gap: 20px;
+        }
+    }
+}
+
+main{
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+
+        .cards-container{
+            display: flex;
+            margin-block: 2em;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1em;
+
+            .card{
+                width: calc(100% / 4 - 1em);
+                border: 1px solid lightgray;
+                display: flex;
+                flex-direction: column;
+                gap: 0.6em;
+
+                .card-body{
+                    padding: 1em;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.6em;
+                    text-transform: capitalize;
+
+                    h3{
+                        color: red;
+                    }
+
+                }
+            }
+        }
+
+        .singCard-container{
+            display: flex;
+            margin-block: 2em;
+            gap: 1em;
+
+            .cardBody{
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+
+                h2{
+                    color: red;
+                }
+
+            }
+
+
+
         }
     }
 }
