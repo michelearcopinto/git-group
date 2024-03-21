@@ -94,13 +94,19 @@ main{
             .card{
                 width: calc(100% / 4 - 1em);
                 border: 1px solid lightgray;
+                display: flex;
+                flex-direction: column;
+                gap: 0.6em;
 
                 .card-body{
                     padding: 1em;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.6em;
+                    text-transform: capitalize;
 
                 }
             }
         }
-
     }
 }
