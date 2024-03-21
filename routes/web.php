@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Guest\PageController;
+use Database\Seeders\MovieSeeder;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class, 'index'])->name('HomePage');
 
 Route::get('/about', [PageController::class, 'indexAbout'])->name('AboutPage');
+
+Route::resource('movies', MovieSeeder::class);
