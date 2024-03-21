@@ -84,5 +84,23 @@ main{
         gap: 1em;
         padding: 1em;
 
+        .cards-container{
+            display: flex;
+            margin-block: 2em;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1em;
+
+            .card{
+                width: calc(100% / 4 - 1em);
+                border: 1px solid lightgray;
+
+                .card-body{
+                    padding: 1em;
+
+                }
+            }
+        }
+
     }
 }
