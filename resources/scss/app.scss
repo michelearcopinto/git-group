@@ -55,9 +55,20 @@ h1 {
 }
 
 header {
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
     h1 {
         color: $font-color-third;
     }
+
+
 
     nav {
         ul {
