@@ -105,8 +105,32 @@ main{
                     gap: 0.6em;
                     text-transform: capitalize;
 
+                    h3{
+                        color: red;
+                    }
+
                 }
             }
+        }
+
+        .singCard-container{
+            display: flex;
+            margin-block: 2em;
+            gap: 1em;
+
+            .cardBody{
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+
+                h2{
+                    color: red;
+                }
+
+            }
+
+
+
         }
     }
 }
