@@ -12,7 +12,9 @@ class MovieController extends Controller
      */
     public function index()
     {
-        //
+        $movies = Movie::all();
+
+        return view('pages.moviesView.index', compact('movies'));
     }
 
     /**
@@ -20,7 +22,7 @@ class MovieController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.moviesView.create');
     }
 
     /**
@@ -28,7 +30,13 @@ class MovieController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $fromData = $request->all();
+
+        $newMovie = new Movie();
+        $newMovie->fill($fromData);
+        $newMovie->save();
+
+        return redirect()->route('movies.show', $newMovie->id);
     }
 
     /**
@@ -36,7 +44,7 @@ class MovieController extends Controller
      */
     public function show(Movie $movie)
     {
-        //
+        return view('pages.moviesView.show', compact('movie'));
     }
 
     /**
